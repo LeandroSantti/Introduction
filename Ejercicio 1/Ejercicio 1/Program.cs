@@ -11,7 +11,7 @@ namespace Ejercicio_1
         static void Main(string[] args)
         {
             Console.WriteLine("Helloooo World");
-
+            Console.ReadKey();
         }
     }
 }
