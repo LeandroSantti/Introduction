@@ -13,9 +13,10 @@ namespace Ejercicio_1
          // Luego calcular y mostrar: el valor máximo, el valor mínimo y el promedio. 
             int cantidad = 5, num, max =0, min=0, promedio=0; //Preguntar a Demian porque tuve que igualarlas a cero. Tiraba un error.
             Console.WriteLine("Digite sus cinco números.");
-            Console.Clear();
+            
             for (int x = 0; x < cantidad; x++)
             {
+                Console.Clear();
                 Console.WriteLine("Digite un número:");
                 num = Convert.ToInt32(Console.ReadLine());
                 if (x == 0)
