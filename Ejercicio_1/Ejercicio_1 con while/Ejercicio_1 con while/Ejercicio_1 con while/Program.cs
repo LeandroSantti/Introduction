@@ -18,26 +18,31 @@ namespace Ejercicio_1_con_while
                 num = Convert.ToInt32(Console.ReadLine());
                 cantidad++;
 
-                if (num == 0)
+                if (cantidad == 1)
                 {
                     num = max;
                     num = min;
-
                 }
-                if (num > max)
+                else 
                 {
-                    max = num;
+                    if (num > max)
+                    {
+                     max = num;
 
+                    }
+                    if (num < min)
+                    {
+                        min = num;
+                    }
                 }
-                if (num < min)
-                {
-                    min = num;
-                }
+                
                 promedio = (promedio + num);
             }
+            
             Console.WriteLine("El máximo es: " + max);
             Console.WriteLine("El mínimo es: " + min);
             Console.WriteLine("El promedio es: " + promedio / cantidad);
             Console.ReadKey();
-    } }
+        } 
+    }
 }
