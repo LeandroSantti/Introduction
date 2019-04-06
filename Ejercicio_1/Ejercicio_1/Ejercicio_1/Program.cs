@@ -24,7 +24,8 @@ namespace Ejercicio_1
                     max = num;
                     min = num;
                 }
-                
+                else
+                {
                     if (num < min)
                     {
                         min = num;
@@ -33,6 +34,8 @@ namespace Ejercicio_1
                     {
                         max = num;
                     }
+                }
+                
                 promedio =  (promedio + num); //Salió de casualidad, ¿Por qué se acumulan los números si en ningún lado los sumé entre si?
             }
             Console.WriteLine("El número máximo es: " + max);
